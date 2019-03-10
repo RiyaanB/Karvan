@@ -69,7 +69,7 @@ public class StartUpActivity extends AppCompatActivity {
             Intent MainActivityIntent = new Intent(this, MainActivity.class);
             startActivity(MainActivityIntent);
         } else {
-            Intent MyAccountDetailsIntent = new Intent(this, MyAccountDetailsActivity.class);
+            Intent MyAccountDetailsIntent = new Intent(this, CategorySelectActivity.class);
             startActivity(MyAccountDetailsIntent);
         }
         finish();
