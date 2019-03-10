@@ -15,7 +15,6 @@
         <activity android:name=".SearchCategorySelectionActivity" />
         <activity android:name=".SearchParameterActivity" />
         <activity android:name=".PrimarySearchActivity" />
-        <activity android:name=".DeactivateTwoActivity" />
         <activity android:name=".DeactiveOneActivity" />
         <activity android:name=".EditDetailsActivity" />
         <activity android:name=".AccountDetailsActivity" />
