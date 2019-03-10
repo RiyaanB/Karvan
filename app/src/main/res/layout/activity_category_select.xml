@@ -31,16 +31,25 @@
             android:layout_height="wrap_content"
             android:hint="e.g. 'english lessons'"
             android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
             android:layout_marginBottom="16dp"/>
 
         <ListView
             android:id="@+id/lv_categories"
             android:layout_width="match_parent"
-            android:layout_height="512dp"
+            android:layout_height="480dp"
             android:background="@color/colorPrimary"
             android:layout_marginBottom="4dp">
 
         </ListView>
+
+        <Button
+            android:id="@+id/btn_done_services"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:onClick="clickCategoryDone"/>
 
     </LinearLayout>
 

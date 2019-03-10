@@ -1,10 +1,13 @@
 package com.example.karvan;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextWatcher;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
@@ -83,5 +86,20 @@ public class CategorySelectActivity extends AppCompatActivity {
 
             }
         });
+
+        categoryListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent subcategoryIntent = new Intent(CategorySelectActivity.this, CategorySelectTwoActivity.class);
+                subcategoryIntent.putExtra("Category", categories.get(position));
+                startActivity(subcategoryIntent);
+            }
+        });
+    }
+
+    public void clickCategoryDone(View view) {
+        Intent meetingPreferences = new Intent(this, MeetingPreferenceSelectionActivity.class);
+        startActivity(meetingPreferences);
+        finish();
     }
 }

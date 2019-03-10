@@ -1,9 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".CategorySelectTwoActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232728">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="What services do you provide?"
+            android:background="#232728"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginBottom="8dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="You can edit these later if you like"
+            android:background="#232728"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="16dp"
+            android:layout_marginBottom="8dp"/>
+        <EditText
+            android:id="@+id/et_subsearchbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="e.g. 'english lessons'"
+            android:textSize="18dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="16dp"/>
+
+        <ListView
+            android:id="@+id/lv_subcategories"
+            android:layout_width="match_parent"
+            android:layout_height="480dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="4dp">
+
+        </ListView>
+
+        <Button
+            android:id="@+id/btn_done_sub"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:onClick="clickDoneSub"/>
+
+    </LinearLayout>
+
+</ScrollView>
