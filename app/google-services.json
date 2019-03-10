@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "416049016944",
+    "firebase_url": "https://karvan-4fd5b.firebaseio.com",
+    "project_id": "karvan-4fd5b",
+    "storage_bucket": "karvan-4fd5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:416049016944:android:bf77c96748127d09",
+        "android_client_info": {
+          "package_name": "com.example.karvan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "416049016944-eupgnujbunf5rbtuqlooo8ualftsfng8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPnyMD3LiKGxAaBgHJoApu4xg9DaI_rw4"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
