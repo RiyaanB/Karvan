@@ -1,9 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".PersonalWriteupActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232728">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Do you have experience working with Non-native speakers?"
+            android:background="#232728"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write a little about your experience in this field. Maybe how long you have been doing it, what it means to you and why you want to provide this service"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:textSize="16dp"/>
+        <EditText
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:inputType="text"
+            android:hint="Write something here"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:layout_marginTop="32dp"
+            android:id="@+id/btn_done_meeting_preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:onClick="clickWriteupDone"/>
+    </LinearLayout>
+
+</ScrollView>
