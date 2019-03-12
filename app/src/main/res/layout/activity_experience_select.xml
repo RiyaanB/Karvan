@@ -38,10 +38,13 @@
                 android:textSize="16dp"
                 android:textColor="#FFFFFF"
                 android:layout_gravity="center"
-                android:layout_width="wrap_content"
+                android:layout_width="280dp"
+                android:layout_marginRight="8dp"
                 android:layout_height="wrap_content"
                 android:text="Experience with Non-native speakers"/>
             <CheckBox
+                android:id="@+id/cb_nonnative"
+                android:layout_gravity="right|center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -58,10 +61,13 @@
                 android:textSize="16dp"
                 android:textColor="#FFFFFF"
                 android:layout_gravity="center"
-                android:layout_width="wrap_content"
+                android:layout_width="280dp"
+                android:layout_marginRight="8dp"
                 android:layout_height="wrap_content"
                 android:text="Experience with Refugees"/>
             <CheckBox
+                android:id="@+id/cb_refugees"
+                android:layout_gravity="right|center"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
@@ -73,14 +79,19 @@
             android:text="List any qualifications here (these will be displated on your profile)"
             android:textColor="#FFFFFF"
             android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
             android:textSize="16dp"/>
         <EditText
+            android:id="@+id/et_qualifications"
             android:background="@color/colorPrimary"
             android:layout_width="match_parent"
             android:layout_height="256dp"
             android:inputType="text"
-            android:hint="e.g. 'Certificate in teaching ESl for refugees'\n\n'Bachelor of Arts in Architecture from Damascus University'"
-            android:textColor="@color/colorAccent" />
+            android:gravity="center"
+            android:hint="e.g. 'Certificate in teaching ESl for \nrefugees'"
+            android:textColor="@color/colorAccent"
+            android:padding="32dp" />
 
         <Button
             android:layout_marginTop="32dp"
