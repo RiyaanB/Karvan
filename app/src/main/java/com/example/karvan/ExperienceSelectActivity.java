@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -49,14 +50,17 @@ public class ExperienceSelectActivity extends AppCompatActivity {
         String qualifications = etQualifications.getText().toString();
 
         //Validation
+        if (qualifications.length() <= 32) {
+            Toast.makeText(this, "Response it too short", Toast.LENGTH_SHORT).show();
+        } else {
+            reference.child("Experience").child("Non Native").setValue(nonnative);
+            reference.child("Experience").child("Refugees").setValue(refugees);
 
-        reference.child("Experience").child("Non Native").setValue(nonnative);
-        reference.child("Experience").child("Refugees").setValue(refugees);
+            reference.child("Experience").child("Qualifications").setValue(qualifications);
 
-        reference.child("Experience").child("Qualifications").setValue(qualifications);
-
-        Intent writeupActivity = new Intent(this, PersonalWriteupActivity.class);
-        startActivity(writeupActivity);
-        finish();
+            Intent writeupActivity = new Intent(this, PersonalWriteupActivity.class);
+            startActivity(writeupActivity);
+            finish();
+        }
     }
 }
