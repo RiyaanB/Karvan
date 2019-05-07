@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232728">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_marginBottom="16dp"
+            android:onClick="clickSearch"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Requests"
+            android:layout_marginBottom="16dp"
+            android:onClick="clickRequests"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Deactivate Account"
+            android:layout_marginBottom="16dp"
+            android:onClick="clickDeactivate"/>
+
+        <ImageView
+            android:layout_width="180dp"
+            android:layout_height="180dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_add_contact"/>
+
+        <TextView
+            android:id="@+id/tv_city"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Balance"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_phone"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:textColor="#FFFFFF"
+            android:textSize="14dp"/>
+
+        <TextView
+            android:id="@+id/tv_editdetails"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="edit"/>
+
+        <TextView
+
+            android:id="@+id/tv_introduction_title"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Introduction"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_intro"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:background="@color/colorPrimary"
+            android:textColor="#FFFFFF"
+            android:textSize="12dp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_qualifications_title"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Qualifications"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_qualifications"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:textSize="12dp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_writeup_title"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Experience"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <TextView
+            android:id="@+id/tv_writeup"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginBottom="8dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textColor="#FFFFFF"
+            android:background="@color/colorPrimary"
+            android:textSize="12dp"
+            android:padding="16dp"/>
+
+        <TextView
+            android:id="@+id/tv_edittexts"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="edit"/>
+
+        <TextView
+            android:id="@+id/tv_offering"
+            android:layout_gravity="center"
+            android:gravity="left"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Offering"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"/>
+
+        <ListView
+            android:id="@+id/lv_services"
+            android:layout_width="match_parent"
+            android:layout_height="240dp"
+            android:nestedScrollingEnabled="true"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="4dp"></ListView>
+
+        <TextView
+            android:id="@+id/tv_editservices"
+            android:layout_marginRight="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:gravity="right"
+            android:textColor="#FFFFFF"
+            android:textSize="16dp"
+            android:text="edit"
+            android:layout_marginBottom="48dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

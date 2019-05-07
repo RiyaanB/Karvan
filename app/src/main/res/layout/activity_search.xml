@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232728">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="24dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find a Service"
+            android:textColor="#FFFFFF"
+            android:textSize="32dp"/>
+
+        <TextView
+            android:id="@+id/tv_selectedsrvice"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="2dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a service"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"
+            android:padding="32dp"
+            android:background="@color/colorPrimary"/>
+
+        <Button
+            android:layout_gravity="center"
+            android:text="Select service"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            android:onClick="clickSelectService"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search Radius (miles)"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+        <SeekBar
+            android:id="@+id/sb_searchradius"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:min="2"
+            android:max="20"/>
+
+        <TextView
+            android:id="@+id/tv_searchradius"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 miles"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="128dp"
+                android:layout_marginRight="128dp"
+                android:text="In-person"/>
+
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cb_inperson"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="128dp"
+                android:layout_marginRight="128dp"
+                android:layout_height="wrap_content"
+                android:text="They travel to me" />
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cb_theytraveltome"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="128dp"
+                android:layout_marginRight="128dp"
+                android:layout_height="wrap_content"
+                android:text="Online" />
+            <CheckBox
+                android:checked="true"
+                android:id="@+id/cb_online"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <Button
+            android:layout_marginTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Search"
+            android:layout_gravity="center"
+            android:onClick="clickSearch"/>
+
+    </LinearLayout>
+
+</ScrollView>

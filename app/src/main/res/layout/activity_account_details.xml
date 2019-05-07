@@ -21,34 +21,76 @@
             android:textColor="#FFFFFF"
             android:layout_gravity="center"
             android:gravity="center"
-            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
             android:textSize="32dp"/>
 
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="First name"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="24dp"/>
+
         <EditText android:id="@+id/input_fn"
-            android:layout_marginTop="32dp"
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:hint="First Name"
-            android:textColor="@color/colorAccent"
-            android:textColorHint="#FFFFFF"/>
+            android:inputType="text"
+            android:hint="Enter your First Name"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Last Name"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="24dp"/>
 
         <EditText android:id="@+id/input_ln"
-
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:hint="Last Name"
-            android:textColor="@color/colorAccent"
-            android:textColorHint="#FFFFFF"/>
+            android:inputType="text"
+            android:hint="Enter your Last Name"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone number"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="24dp"/>
 
         <EditText android:id="@+id/input_phone"
-
+            android:gravity="center"
             android:layout_width="match_parent"
             android:layout_height="64dp"
-            android:inputType="phone"
-            android:hint="Phone"
-            android:textColor="@color/colorAccent"
-            android:textColorHint="#FFFFFF"/>
+            android:inputType="number"
+            android:hint="Enter your Phone Number"
+            android:textColor="@color/colorAccent"/>
 
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="City"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="8dp"
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/et_city"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:hint="Enter your city"
+            android:textColor="@color/colorAccent"/>
         <Button
             android:layout_gravity="center"
             android:id="@+id/btn_done_details"

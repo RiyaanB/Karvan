@@ -6,6 +6,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Toast;
 
+import com.example.karvan.AccountDetailsActivity;
+import com.example.karvan.R;
+import com.example.karvan.SignInActivity;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
@@ -35,25 +38,28 @@ public class StartUpActivity extends AppCompatActivity {
     }
 
     private void updateUI(final FirebaseUser currentUser) {
-        Intent nowIntent;
+        Intent userIntent;
         if(currentUser == null) {
-            nowIntent = new Intent(this, SignInActivity.class);
-            startActivity(nowIntent);
+            userIntent = new Intent(this, SignInActivity.class);
+            startActivity(userIntent);
             finish();
         }
         else {
-
             FirebaseDatabase database = FirebaseDatabase.getInstance();
-            DatabaseReference reference = database.getReference("Users");
-
-            reference.addListenerForSingleValueEvent(new ValueEventListener() {
+            database.getReference().child("Users").addListenerForSingleValueEvent(new ValueEventListener() {
                 @Override
                 public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                     if(dataSnapshot.hasChild(currentUser.getUid())){
-                        detailsExist(true);
+                        startActivity(new Intent(StartUpActivity.this, HomeActivity.class));
+//                        Intent intent = new Intent(StartUpActivity.this, ViewingOtherProfileActivity.class);
+//                        intent.putExtra("UID", "eoKeghv6mkOtfV7U8g9rNTIx6y92");
+//                        startActivity(intent);
+//
+//                        Toast.makeText(StartUpActivity.this, "Opening his profile", Toast.LENGTH_SHORT).show();
                     } else {
-                        detailsExist(false);
+                        startActivity(new Intent(StartUpActivity.this, AccountDetailsActivity.class));
                     }
+                    finish();
                 }
 
                 @Override
@@ -62,16 +68,10 @@ public class StartUpActivity extends AppCompatActivity {
                 }
             });
         }
+
     }
 
-    private void detailsExist(boolean detailsExist) {
-        if(detailsExist){
-            Intent MainActivityIntent = new Intent(this, MainActivity.class);
-            startActivity(MainActivityIntent);
-        } else {
-            Intent MyAccountDetailsIntent = new Intent(this, CategorySelectActivity.class);
-            startActivity(MyAccountDetailsIntent);
-        }
-        finish();
+    @Override
+    public void onBackPressed() {
     }
 }

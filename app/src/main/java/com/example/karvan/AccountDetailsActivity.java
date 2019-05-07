@@ -17,20 +17,26 @@ public class AccountDetailsActivity extends AppCompatActivity {
     public EditText etFirstName;
     public EditText etLastName;
     public EditText etPhone;
+    public EditText etCity;
 
     FirebaseAuth mAuth;
     FirebaseUser currentUser;
     FirebaseDatabase database;
     DatabaseReference reference;
 
+    Bundle myBundle;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_account_details);
 
+        myBundle = getIntent().getExtras();
+
         etFirstName = findViewById(R.id.input_fn);
         etLastName = findViewById(R.id.input_ln);
         etPhone = findViewById(R.id.input_phone);
+        etCity = findViewById(R.id.et_city);
 
         mAuth = FirebaseAuth.getInstance();
         currentUser = mAuth.getCurrentUser();
@@ -47,13 +53,23 @@ public class AccountDetailsActivity extends AppCompatActivity {
         String firstname = etFirstName.getText().toString();
         String lastname = etLastName.getText().toString();
         String phone = etPhone.getText().toString();
+        String city = etCity.getText().toString();
 
         reference.child("First Name").setValue(firstname);
         reference.child("Last Name").setValue(lastname);
+        reference.child("Name").setValue(firstname + " " + lastname);
         reference.child("Phone").setValue(phone);
+        reference.child("City").setValue(city);
 
-        Intent mainActivity = new Intent(this, MainActivity.class);
-        startActivity(mainActivity);
+        if(myBundle != null){
+            startActivity(new Intent(this, HomeActivity.class));
+        } else {
+            startActivity(new Intent(this, OfferingSkillsSelectionActivity.class));
+        }
         finish();
+    }
+
+    @Override
+    public void onBackPressed() {
     }
 }

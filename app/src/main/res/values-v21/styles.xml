@@ -6,4 +6,8 @@
         <item name="android:statusBarColor">#232728</item>
     </style>
 
+    <style name="MyDialogTheme" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
 </resources>

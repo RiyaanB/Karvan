@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.karvan">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,25 +12,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity
-            android:name=".MyProfileActivity"
-            android:label="@string/title_activity_my_profile"
-            android:theme="@style/AppTheme.NoActionBar.NoActionBar"></activity>
-        <activity android:name=".CategorySelectTwoActivity" />
-        <activity android:name=".MessagesActivity" />
-        <activity android:name=".ViewProfileActivity" />
-        <activity android:name=".SearchCategorySelectionActivity" />
-        <activity android:name=".SearchParameterActivity" />
-        <activity android:name=".PrimarySearchActivity" />
-        <activity android:name=".DeactiveOneActivity" />
-        <activity android:name=".EditDetailsActivity" />
+        <activity android:name=".DeactivateTwoActivity"></activity>
+        <activity android:name=".DeactivateOneActivity" />
+        <activity android:name=".ViewRequestsActivity" />
+        <activity android:name=".SearchResultsActivity" />
+        <activity android:name=".SelectOneServiceActivity" />
+        <activity android:name=".SearchActivity" />
+        <activity android:name=".ViewingOtherProfileActivity" />
+        <activity android:name=".InputPreferencesAndInformationActivity" />
+        <activity android:name=".OfferingSkillsSelectionActivity" />
         <activity android:name=".AccountDetailsActivity" />
-        <activity android:name=".PersonalWriteupActivity" />
-        <activity android:name=".ExperienceSelectActivity" />
-        <activity android:name=".MeetingPreferenceSelectionActivity" />
-        <activity android:name=".CategorySelectActivity" />
-        <activity android:name=".MainActivity" />
         <activity android:name=".SignUpActivity" />
+        <activity android:name=".HomeActivity" />
         <activity android:name=".SignInActivity" />
         <activity android:name=".StartUpActivity">
             <intent-filter>

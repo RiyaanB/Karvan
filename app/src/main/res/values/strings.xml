@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Karvan</string>
+    <string name="app_name">Karvan Beta 1</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -81,5 +81,7 @@
 
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="title_activity_my_profile">MyProfileActivity</string>
+    <string name="label_ok">Ok</string>
+    <string name="title_activity_search">SearchActivity</string>
 
 </resources>

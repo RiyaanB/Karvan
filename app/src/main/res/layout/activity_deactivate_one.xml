@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232728">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Are you sure you want to close your account?"
+            android:background="#232728"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginBottom="16dp"/>
+
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="If you close your account, you will be unable to recover your previous information, ratings, collaborations and reviews\n\nIf you would like to provide us feedback or suggest an improvement, please send us a message on our help tab. We would love to resolve any issues you experience and keep you in our Karvan community"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:textSize="16dp"/>
+        <EditText
+            android:id="@+id/et_feedback"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:inputType="text"
+            android:hint=""
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:layout_marginTop="32dp"
+            android:id="@+id/btn_done_meeting_preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Deactivation"
+            android:layout_gravity="center"
+            android:onClick="clickDeactivateConfirm"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232728">
+
+    <LinearLayout
+
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="56dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write a small introduction for yourself! This will be displayed on your profile"
+            android:textColor="#FFFFFF"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/et_intro"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:hint="Write something here"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Where do you work with your customers?"
+            android:background="#232728"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_width="128dp"
+                android:layout_marginRight="128dp"
+                android:text="In-person"/>
+
+            <CheckBox
+                android:id="@+id/cb_inperson"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="128dp"
+                android:layout_marginRight="128dp"
+                android:layout_height="wrap_content"
+                android:text="They travel to me" />
+            <CheckBox
+                android:id="@+id/cb_theytravel"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_height="64dp"
+            android:layout_width="match_parent"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="128dp"
+                android:layout_marginRight="128dp"
+                android:layout_height="wrap_content"
+                android:text="Online"/>
+            <CheckBox
+                android:id="@+id/cb_online"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="What is your zip code?"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/et_zip"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:hint="Enter your Area code"
+            android:textColor="@color/colorAccent"/>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How far are you willing to travel?"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:textSize="24dp"/>
+        <EditText
+            android:id="@+id/et_distance"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:inputType="text"
+            android:hint="Distance in miles"
+            android:textColor="@color/colorAccent"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Do you have experience working with Non-native speakers?"
+            android:background="#232728"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="20dp"
+            android:layout_marginBottom="16dp"/>
+
+        <LinearLayout
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:text="Experience with Non-native speakers"/>
+            <CheckBox
+                android:id="@+id/cb_nonnative"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="8dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp">
+            <TextView
+                android:textSize="16dp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"
+                android:layout_width="280dp"
+                android:layout_marginRight="8dp"
+                android:layout_height="wrap_content"
+                android:text="Experience with Refugees"/>
+            <CheckBox
+                android:id="@+id/cb_refugees"
+                android:layout_gravity="right|center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="List any qualifications here (these will be displated on your profile)"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="32dp"
+            android:gravity="center"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/et_qualifications"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:gravity="center"
+            android:hint="e.g. 'Certificate in teaching ESl for \nrefugees'"
+            android:textColor="@color/colorAccent" />
+
+        <TextView
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_marginBottom="32dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Write a little about your experience in this field. Maybe how long you have been doing it, what it means to you and why you want to provide this service"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="32dp"
+            android:textSize="20dp"/>
+        <EditText
+            android:id="@+id/et_writeup"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:layout_width="match_parent"
+            android:layout_height="128dp"
+            android:padding="16dp"
+            android:inputType="textMultiLine"
+            android:hint="Write something here"
+            android:textColor="@color/colorAccent" />
+
+        <Button
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:id="@+id/btn_done_meeting_preferences"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:onClick="clickInputDone"/>
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fitsSystemWindows="true"
+    android:background="#232728">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:paddingLeft="24dp"
+        android:paddingRight="24dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:text="Here are some requests for your services"
+            android:background="#232728"
+            android:textColor="#FFFFFF"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginBottom="16dp"/>
+
+
+        <ListView
+            android:id="@+id/lv_requests"
+            android:layout_width="match_parent"
+            android:layout_height="540dp"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="4dp"
+            android:nestedScrollingEnabled="true">
+
+        </ListView>
+
+
+    </LinearLayout>
+
+</ScrollView>
